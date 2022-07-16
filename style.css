@@ -283,6 +283,9 @@ a:hover {
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
     margin-bottom: 0;
     z-index: 1;
 }
@@ -311,16 +314,13 @@ a:hover {
 }
 
 .navbar .nav {
-    padding-top: 2px;
-    margin-right: -16px;
     float: right;
     z-index: 1;
 }
 
 .nav > li {
-    float: left;
-    margin-top: 4px;
     font-size: 16px;
+    list-style-type: none;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -359,9 +359,7 @@ a:hover {
 
 @media (min-width: 768px) {
     .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
+        margin-top: 20px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
@@ -501,8 +499,9 @@ button {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
+    border-color: rgba(0, 0, 0, 0.6);
     box-shadow: none;
+    width: 200px;
 }
 
 .scrollToTop {
@@ -647,6 +646,7 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #535252!important;
+    text-decoration: none;
 }
 
 .container {
@@ -836,7 +836,8 @@ h4 {
 
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
-        max-width: 80%
+        max-width: 80%;
+        display: flex;
     }
     .nav-center.navbar .nav {
         max-width: 100%
@@ -900,8 +901,6 @@ h4 {
     }
     .navbar .nav {
         padding-top: 0;
-        border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none!important;
     }
     .navbar.row {
         margin-left: 0;
@@ -916,10 +915,9 @@ h4 {
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
         text-align: left;
-        padding-left: 15px;
         width: 100%;
+        list-style-type: none;
     }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
@@ -1029,4 +1027,22 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#message {
+    width: 80%;
+    max-width: 350px;
+    height: 100px;
+    margin-top: 10px;
 }
