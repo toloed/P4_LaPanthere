@@ -1027,6 +1027,7 @@ h4 {
     }
 }
 
+/*code supplémentaire*/
 .text-center {
     display: flex;
     flex-direction: column;
@@ -1067,4 +1068,8 @@ h4 {
 
 .img_header {
     height: 40px;
+}
+
+strong {
+    font-size: 16px;
 }
