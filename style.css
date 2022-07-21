@@ -283,9 +283,6 @@ a:hover {
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    padding-right: 30px;
     margin-bottom: 0;
     z-index: 1;
 }
@@ -1065,6 +1062,7 @@ h4 {
 
 .lien {
     font-size: 16px;
+    margin-right: 10px;
 }
 
 .img_header {
