@@ -1077,3 +1077,8 @@ strong {
 .txt {
     font-size: 20px;
 }
+
+a:focus {
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
